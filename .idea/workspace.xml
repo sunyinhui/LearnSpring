@@ -36,16 +36,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreeConditionCommunication.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ThreeConditionCommunication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/ThreeConditionCommunication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-168">
-              <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+            <state relative-caret-position="210">
+              <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
               <folding>
                 <element signature="e#348#499#0" expanded="true" />
                 <element signature="e#498#499#0" expanded="true" />
                 <element signature="e#534#685#0" expanded="true" />
                 <element signature="e#684#685#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SemaphoreTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/SemaphoreTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#601#1272#0" expanded="true" />
+                <element signature="e#1271#1272#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -162,18 +176,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ThreadLocalTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/ThreadLocalTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ThreadPoolTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/ThreadPoolTest.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -217,7 +219,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/springinaction/config/SpringIdolConfig.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/bean/Juggler.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/aop/Audience.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/bean/Guitar.java" />
@@ -268,6 +269,7 @@
         <option value="$PROJECT_DIR$/src/com/springinaction/thread/TraditionalThreadCommunication2.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/thread/TraditionalThreadCommunication.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/thread/ThreeConditionCommunication.java" />
+        <option value="$PROJECT_DIR$/src/com/springinaction/thread/SemaphoreTest.java" />
       </list>
     </option>
   </component>
@@ -497,27 +499,7 @@
       <recent name="E:\gitRep\SpringLearn\src\com\springinaction\bean" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.ReadWriteLockTest">
-    <configuration default="false" name="MultiThreadShareData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.springinaction.thread.TraditionalThreadCommunication2" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.springinaction.thread.MultiThreadShareData" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="SpringLearn" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.SemaphoreTest">
     <configuration default="false" name="ThreadPoolTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -586,6 +568,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="com.springinaction.thread.ReadWriteLockTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="SpringLearn" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SemaphoreTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.springinaction.thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.springinaction.thread.SemaphoreTest" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1068,19 +1070,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Application.MultiThreadShareData" />
-      <item index="1" class="java.lang.String" itemvalue="Application.ThreadPoolTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.CallableAndFutureTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.LockTest" />
-      <item index="4" class="java.lang.String" itemvalue="Application.ReadWriteLockTest" />
+      <item index="0" class="java.lang.String" itemvalue="Application.ThreadPoolTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.CallableAndFutureTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.LockTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.ReadWriteLockTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.SemaphoreTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.ReadWriteLockTest" />
-        <item index="1" class="java.lang.String" itemvalue="Application.LockTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.CallableAndFutureTest" />
-        <item index="3" class="java.lang.String" itemvalue="Application.ThreadPoolTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.MultiThreadShareData" />
+        <item index="0" class="java.lang.String" itemvalue="Application.SemaphoreTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.ReadWriteLockTest" />
+        <item index="2" class="java.lang.String" itemvalue="Application.LockTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.CallableAndFutureTest" />
+        <item index="4" class="java.lang.String" itemvalue="Application.ThreadPoolTest" />
       </list>
     </recent_temporary>
   </component>
@@ -1109,12 +1111,12 @@
       <workItem from="1490658219952" duration="3610000" />
       <workItem from="1490664462861" duration="15342000" />
       <workItem from="1490738982225" duration="23624000" />
-      <workItem from="1490833550527" duration="20374000" />
+      <workItem from="1490833550527" duration="21646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="132291000" />
+    <option name="totallyTimeSpent" value="133563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1137,7 +1139,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32736155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32736155" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32899022" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1192,13 +1194,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.7.0_80/src.zip!/com/sun/corba/se/spi/orbutil/threadpool/ThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="81" column="7" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/spring-context-4.3.7.RELEASE-sources.jar!/org/springframework/scheduling/concurrent/DefaultManagedAwareThreadFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1726,13 +1721,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/ThreeConditionCommunication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-168">
-          <caret line="83" column="44" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
+        <state relative-caret-position="210">
+          <caret line="104" column="8" selection-start-line="104" selection-start-column="8" selection-end-line="104" selection-end-column="8" />
           <folding>
             <element signature="e#348#499#0" expanded="true" />
             <element signature="e#498#499#0" expanded="true" />
             <element signature="e#534#685#0" expanded="true" />
             <element signature="e#684#685#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/SemaphoreTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#601#1272#0" expanded="true" />
+            <element signature="e#1271#1272#0" expanded="true" />
           </folding>
         </state>
       </provider>
