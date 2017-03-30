@@ -4,9 +4,84 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * Created by sunyinhui on 2017/3/28.
+ *
  */
-public class LockTest {
-    Lock lock = new ReentrantLock();
 
+public class LockTest {
+
+    /**
+     * @param args
+     */
+    public static void main(String[] args) {
+        new LockTest().init();
+    }
+
+    private void init(){
+        final Outputer outputer = new Outputer();
+        new Thread(new Runnable(){
+            @Override
+            public void run() {
+                while(true){
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                    outputer.output("zhangxiaoxiang");
+                }
+
+            }
+        }).start();
+
+        new Thread(new Runnable(){
+            @Override
+            public void run() {
+                while(true){
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        // TODO Auto-generated catch block
+                        e.printStackTrace();
+                    }
+                    outputer.output("lihuoming");
+                }
+
+            }
+        }).start();
+
+    }
+
+    static class Outputer{
+        Lock lock = new ReentrantLock();
+        public void output(String name){
+            int len = name.length();
+            lock.lock();
+            try{
+                for(int i=0;i<len;i++){
+                    System.out.print(name.charAt(i));
+                }
+                System.out.println();
+            }finally{
+                lock.unlock(); // 防止异常后，没有释放锁
+            }
+        }
+
+        public synchronized void output2(String name){
+            int len = name.length();
+            for(int i=0;i<len;i++){
+                System.out.print(name.charAt(i));
+            }
+            System.out.println();
+        }
+
+        public static synchronized void output3(String name){
+            int len = name.length();
+            for(int i=0;i<len;i++){
+                System.out.print(name.charAt(i));
+            }
+            System.out.println();
+        }
+    }
 }
+
