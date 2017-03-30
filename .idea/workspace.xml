@@ -40,7 +40,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ReadWriteLockTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReadWriteLockTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/ReadWriteLockTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="247">
@@ -51,6 +51,19 @@
                 <element signature="e#406#407#0" expanded="true" />
                 <element signature="e#421#544#0" expanded="true" />
                 <element signature="e#543#544#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CacheDemo.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/CacheDemo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#314#330#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -158,16 +171,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="configbean.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/configbean.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2160">
-              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -193,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/springinaction/bean/Poem.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/bean/PoeticJuggler.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/bean/Sonnet29.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/bean/Instrument.java" />
@@ -244,6 +246,7 @@
         <option value="$PROJECT_DIR$/src/com/springinaction/thread/CallableAndFutureTest.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/thread/LockTest.java" />
         <option value="$PROJECT_DIR$/src/com/springinaction/thread/ReadWriteLockTest.java" />
+        <option value="$PROJECT_DIR$/src/com/springinaction/thread/CacheDemo.java" />
       </list>
     </option>
   </component>
@@ -1110,12 +1113,12 @@
       <workItem from="1490658219952" duration="3610000" />
       <workItem from="1490664462861" duration="15342000" />
       <workItem from="1490738982225" duration="23624000" />
-      <workItem from="1490833550527" duration="13964000" />
+      <workItem from="1490833550527" duration="15947000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125881000" />
+    <option name="totallyTimeSpent" value="127864000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1193,13 +1196,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/springinaction/loopup/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="51" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.ideaLibSources/spring-context-4.3.7.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3168">
@@ -1676,6 +1672,17 @@
             <element signature="e#406#407#0" expanded="true" />
             <element signature="e#421#544#0" expanded="true" />
             <element signature="e#543#544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/springinaction/thread/CacheDemo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="52" column="36" selection-start-line="52" selection-start-column="36" selection-end-line="52" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#314#330#0" expanded="true" />
           </folding>
         </state>
       </provider>
