@@ -3,6 +3,7 @@ package com.springinaction.thread;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by sunyinhui on 2017/3/30.
@@ -26,6 +27,28 @@ public class ThreadPoolTest {
         threadPool.shutdown();
 
         // threadPool.shutdownNow();
+        // 10秒之后运行
+        Executors.newScheduledThreadPool(3).schedule(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("bombing!");
+            }
+        }, 10, TimeUnit.SECONDS);
+
+        // 10秒后运行，然后每两秒运行
+        Executors.newScheduledThreadPool(3).scheduleAtFixedRate(
+                new Runnable() {
+                    @Override
+                    public void run() {
+                        System.out.println("bombing~!");
+                    }
+                },
+                10,  //10秒之后
+                2,   //每隔2秒
+                TimeUnit.SECONDS
+        );
+
+        threadPool.shutdown();
 
     }
 }
