@@ -4,6 +4,13 @@ package com.springinaction.thread;
  * Created by sunyinhui on 2017/3/30.
  */
 
+/**
+ *
+ * 当计数器减为0时，则所有等待者或单个等待者开始执行
+ *
+ *
+ */
+
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
